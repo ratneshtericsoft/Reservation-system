@@ -20,7 +20,8 @@ import { JwtStrategy } from './strategies/jwt.strategy';
           DB_NAME : Joi.string().required(),
           JWT_SECRET: Joi.string().required(),
           JWT_EXPIRATION: Joi.string().required(),
-          PORT : Joi.number().required()
+          HTTP_PORT : Joi.number().required(),
+          TCP_PORT : Joi.number().required()
           
         }),
       }),
